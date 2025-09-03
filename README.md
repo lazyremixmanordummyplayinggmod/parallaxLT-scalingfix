@@ -1,6 +1,10 @@
 
 # ParallaxLT - Transform Sprites to Mimic 3D Graphics in Haxeflixel
 
+
+- This fork is specificy made to fix any issues with scaling legacy parallax sprites and some screenspace inconsistencys for latest versions 5.9 or so
+
+
 ![](https://img.shields.io/github/repo-size/Itz-Miles/parallaxlt) ![](https://badgen.net/github/open-issues/Itz-Miles/parallaxlt) ![](https://badgen.net/badge/license/Apache%202.0)
 
 ParallaxLT is a powerful and easy-to-use Haxe library that distorts sprites via linear transaformations to mimic 3D graphics in [HaxeFlixel](https://haxeflixel.com).
