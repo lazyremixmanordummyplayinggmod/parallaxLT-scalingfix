@@ -147,7 +147,9 @@ class ParallaxSprite extends FlxSprite
 			_point.floor();
 		_matrix.tx += _point.x;
 		_matrix.ty += _point.y;
-
+		_matrix.identity();
+		_matrix.translate(-origin.x, -origin.y);
+		_matrix.scale(scale.x, scale.y);
 		camera.drawPixels(_frame, framePixels, _matrix, colorTransform, blend, antialiasing, shader);
 	}
 
