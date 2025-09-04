@@ -96,8 +96,8 @@ class ParallaxSprite extends FlxSprite
 		_bufferOne.copyFrom(pointOne.getScreenPosition(camera));
 		_bufferTwo.copyFrom(pointTwo.getScreenPosition(camera));
 
-		newRect.x = x - camera.scroll.x * scrollFactor.x - offset.x + origin.x - _scaledOrigin.x;
-		newRect.y = y - camera.scroll.y * scrollFactor.y - offset.x + origin.x - _scaledOrigin.x;
+		newRect.x = x - (camera.scroll.x * scrollFactor.x) - offset.x + origin.x - _scaledOrigin.x;
+		newRect.y = y - (camera.scroll.y * scrollFactor.y) - offset.x + origin.x - _scaledOrigin.x;
 
 		newRect.width = frameWidth;
 		newRect.height = frameHeight;
