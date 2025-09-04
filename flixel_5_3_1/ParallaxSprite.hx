@@ -97,8 +97,8 @@ class ParallaxSprite extends FlxSprite
 		_bufferTwo.copyFrom(pointTwo.getScreenPosition(camera));
 		
 		var scaledOrigin:FlxPoint = FlxPoint.weak(origin.x * scale.x, origin.y * scale.y);
-		newRect.x += - (camera.scroll.x * scrollFactor.x) - offset.x + origin.x - scaledOrigin.x;
-		newRect.y += - (camera.scroll.y * scrollFactor.y) - offset.x + origin.x - scaledOrigin.x;
+		newRect.x = x - (camera.scroll.x * scrollFactor.x) - offset.x + origin.x - scaledOrigin.x;
+		newRect.y = y - (camera.scroll.y * scrollFactor.y) - offset.x + origin.x - scaledOrigin.x;
 
 		newRect.width = frameWidth;
 		newRect.height = frameHeight;
